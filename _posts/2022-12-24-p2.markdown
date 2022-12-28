@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DeepLearning.AI TensorFlow Developer Profession Certificate {PROGRESS UPDATE}"
+title:  "DeepLearning.AI TensorFlow Developer Profession Certificate [PROGRESS UPDATE]"
 date:   2022-12-24 09:53:08 +0800
 categories: jekyll update
 ---
