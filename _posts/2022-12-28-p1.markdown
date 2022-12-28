@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Completion of Msc. AI 2022/23 S1"
-date:   2022-12-28 16:53:08 +0800
+date:   2022-12-27 09:53:08 +0800
 categories: jekyll update
 ---
 Today marks the release of NTU MSAI examination result release day and I'm officially certified to have completed AI6128 (Urban Computing) and AI6122 (Text data management and Processing) of the MSAI program. My Cumulative GPA stands at 4.67/5.00. 
