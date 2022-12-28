@@ -4,6 +4,6 @@ title:  "Completion of Msc. AI 2022/23 S1"
 date:   2022-12-28 16:53:08 +0800
 categories: jekyll update
 ---
-Today mark the release of NTU MSAI examination result release day and I'm officially certified to have completed AI6128 (Urban Computing) and AI6122 (Text data management and Processing).
-This also means that I have completed 18AU out of 30AU required for graduation. On track to graduate by July 2023 or December 2023. If a good offer arises early, I will target to complete the program faster.
+Today mark the release of NTU MSAI examination result release day and I'm officially certified to have completed AI6128 (Urban Computing) and AI6122 (Text data management and Processing). My Cumulative GPA stands at 4.67/5.00. 
+The results also means that I have completed 18AU out of 30AU required for graduation. On track to graduate by July 2023 or December 2023. If a good offer arises early, I will target to complete the program faster.
 
