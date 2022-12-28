@@ -9,4 +9,5 @@ I have completed Course 2 (Convolution Neural Networks in TensorFlow) out of 4 a
 Targeting completion before 07 Jan 2023.
 In the first two courses, we learned how to build a very basic Neural network by running a sequel of code using the TF library.
 Also went through some data processing (Augmentation and Files processing) as well as some in-built regularization functions within TF.
-The course does not elaborate deeply on the theoretical aspect of deep learning. The best takeaway would be I often ended up with a rich variety of useful TF skeleton scripts, familiarized thanks to the coding assignment during the course.
+The course does not elaborate deeply on the theoretical aspect of deep learning. The best takeaway would be I often ended up with a rich variety of useful TF skeleton scripts, familiarized thanks to the coding assignment during the course.<br>
+<a href='c2w4.pdf'>Certification in PDF Format</a>
