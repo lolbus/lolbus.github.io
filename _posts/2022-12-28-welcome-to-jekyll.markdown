@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Completion of Msc. AI 2022/23 semester 1"
+title:  "Completion of Msc. AI 2022/23 S1"
 date:   2022-12-28 16:53:08 +0800
 categories: jekyll update
 ---
