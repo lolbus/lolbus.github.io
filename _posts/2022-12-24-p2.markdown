@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "DeepLearning.AI TensorFlow Developer Profession Certificate"
+date:   2022-12-24 09:53:08 +0800
+categories: jekyll update
+---
+
+I have completed Course 2 out of 4 and will be attempting to sign up for the TensorFlow Developer Professional Certification Examination at the end of the course. 
+Targeting completion before 07 Jan 2023.
