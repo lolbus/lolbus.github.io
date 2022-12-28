@@ -5,7 +5,6 @@ date:   2022-12-27 09:53:08 +0800
 categories: jekyll update
 ---
 Today marks the release of NTU MSAI examination result release day and I'm officially certified to have completed AI6128 (Urban Computing) and AI6122 (Text data management and Processing) of the MSAI program. My Cumulative GPA stands at 4.67/5.00. 
-This also means that I have completed 18AU out of 30AU required for graduation. 
+This also means that I have completed 18AU out of the 30AU required for graduation. 
 On track to graduate by July 2023 or December 2023. 
-If a good offer arises early, I will target to complete the program faster. Otherwise the plan is to have a steady journey until December 2023. 
-
+If a good offer arises early, I will target to complete the program faster. Otherwise, the plan is to have a steady journey until December 2023. 
