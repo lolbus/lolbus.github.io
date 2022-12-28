@@ -2,4 +2,4 @@ layout: page
 title: "About"
 permalink: /about/contact
 
-Testing
+Just a testing site!
