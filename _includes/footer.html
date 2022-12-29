@@ -4,7 +4,6 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col">
         <p class="feed-subscribe">
           <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
             <svg class="svg-icon orange">
@@ -18,7 +17,6 @@
             Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
           {%- endif %}
       {%- endif %}
-      </div>
       <div class="footer-col">
         {{ site.description | escape }}
       </div>
