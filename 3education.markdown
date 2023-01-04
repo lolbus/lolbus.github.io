@@ -3,7 +3,7 @@ layout: page
 title: Education
 permalink: /education/ 
 ---
-My EDUCATION info:     
+My EDUCATION info:        
 Nanyang Technological University, Singapore<br>                                                                                     	
 School of Computer Science and Engineering (SCSE)<br>
 Master of Science in Artificial Intelligence (Part-Time), <BR>
