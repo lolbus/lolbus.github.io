@@ -26,6 +26,8 @@ from top-tiered venues and write a literature review report to report a neat and
 - Awarded A Grade for Text Data Management & Processing course in NTU MSAI Program  
 Download Link:  
   
+
+  
 2. NTU, Singapore, Machine Learning & Applications Project, Jan 2022 – Apr 2022  
 Title: Kaggle’s Kinship Recognition Challenge: Introduction of Convolution-Free Model to boost conventional ensemble classifier  
 (School Final Assignment for Course: AI6102, Machine Learning & Applications. Conduct a research project related to machine learning)  
@@ -47,7 +49,7 @@ Title: Reimplementation of “Joint Learning of Character and Word Embeddings”
 - Validation and Test performance evaluated based on word relatedness test using Spearman correlation metrics and Analogy Reasoning using % accuracy.  
 - Discover that modified CBOW generally outperforms conventional CBOW reimplementation, consistent with the original conference paper. However, the modified CBOW model losses performance superiority with a larger number of vocabularies to total words ratio in the training corpus.  
 - Awarded A+ Grade for Deep Learning & Applications course in NTU MSAI Program  
-Video Link: https://www.youtube.com/watch?v=ANLI7Hl1jH0  
+Video Link: (Youtube)[https://www.youtube.com/watch?v=ANLI7Hl1jH0] 
   
 4. NTU, Singapore, Engineering Innovation Design, Jan 2016 – May 2016  
 Project Title: Design of Supermarket trolley with anti theft system  
