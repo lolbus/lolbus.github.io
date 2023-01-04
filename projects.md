@@ -14,7 +14,7 @@ from top-tiered venues and write a literature review report to report a neat and
 - - Incorporating Context Graph with Logical Reasoning for Inductive Relation Prediction  
 - - Re-thinking Knowledge Graph Completion Evaluation from an Information Retrieval Perspective  
 - Awarded A Grade for Text Data Management & Processing course in NTU MSAI Program  
-Download Link:[Final Report PDF](https://github.com/lolbus/lolbus.github.io/raw/gh-pages/TengGuangWay_G2102434F_ReadingAssignment6122.pdf)  
+Download Link: [Final Report PDF](https://github.com/lolbus/lolbus.github.io/raw/gh-pages/TengGuangWay_G2102434F_ReadingAssignment6122.pdf)  
 <br>
   
 2. NTU, Singapore, Machine Learning & Applications Project, Jan 2022 – Apr 2022  
@@ -26,7 +26,7 @@ Title: Kaggle’s Kinship Recognition Challenge: Introduction of Convolution-Fre
 - Proven that the Vision Transformer model variants output has a lower correlation to the CNN model variants as compared to the CNN model variants output correlation to other CNN model variants  
 - Awarded A+ Grade for Machine Learning & Applications course in NTU MSAI Program  
 - Awarded Best Presenter Award (Senior) and SGD300 at STCAI Conference Sharing, 25 June 2022  
-Download Link:[Final Report PDF](https://github.com/lolbus/lolbus.github.io/raw/gh-pages/ML6102Project.pdf)  
+Download Link: [Final Report PDF](https://github.com/lolbus/lolbus.github.io/raw/gh-pages/ML6102Project.pdf)  
 <br>
   
 3. NTU, Singapore, Deep Learning & Applications Project Aug 2021 – Nov 2021  
