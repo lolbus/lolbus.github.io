@@ -4,15 +4,13 @@ title: Experience
 permalink: /experience/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+my FULL-TIME WORK EXPERIENCE info:  
+Nanyang Technology University, Singapore: Software Engineering Research Assistant  
+Nov 2021 - Current  
+  
+Nanyang Technology University, Singapore: R&D Engineer (Robotics) 
+Oct 2020 – Apr 2021 
+  
+ExxonMobil, PAC Refinery Singapore, Fixed Equipment & Inspection Engineer/First Line Supervisor 
+Sep 2019 – Oct 2020 
