@@ -5,7 +5,7 @@ permalink: /education/
 ---
 My EDUCATION info: <br><br>
 Nanyang Technological University, Singapore<br>                                                                                     	
-School of Computer Science and Engineering (SCSE)<br>                
+School of Computer Science and Engineering (SCSE)<br>
 Master of Science in Artificial Intelligence (Part-Time), <BR>
 Aug 2021 – Jun 2023 (Expected)<BR>
 Cumulative GPA: 4.67/5.00<BR><BR>
