@@ -15,9 +15,7 @@ from top-tiered venues and write a literature review report to report a neat and
 - - Re-thinking Knowledge Graph Completion Evaluation from an Information Retrieval Perspective  
 - Awarded A Grade for Text Data Management & Processing course in NTU MSAI Program  
 Download Link:  
-  
-
-  
+<br>  
 2. NTU, Singapore, Machine Learning & Applications Project, Jan 2022 – Apr 2022  
 Title: Kaggle’s Kinship Recognition Challenge: Introduction of Convolution-Free Model to boost conventional ensemble classifier  
 (School Final Assignment for Course: AI6102, Machine Learning & Applications. Conduct a research project related to machine learning)  
@@ -28,8 +26,7 @@ Title: Kaggle’s Kinship Recognition Challenge: Introduction of Convolution-Fre
 - Awarded A+ Grade for Machine Learning & Applications course in NTU MSAI Program  
 - Awarded Best Presenter Award (Senior) and SGD300 at STCAI Conference Sharing, 25 June 2022  
 Download Link:  
-  
-
+<br>  
 3. NTU, Singapore, Deep Learning & Applications Project Aug 2021 – Nov 2021  
 Title: Reimplementation of “Joint Learning of Character and Word Embeddings”  
 (School Final Assignment for Course AI6103, Deep learning & Applications. Assignment Task: Take a conference paper (AAAI, IJCAI, ICML, NeurIPS, ICLR, CVPR, ICCV NAACL, ACL, etc ) from 2015. Reimplement the algorithm in that paper. No existing source code is allowed)  
@@ -40,6 +37,7 @@ Title: Reimplementation of “Joint Learning of Character and Word Embeddings”
 - Discover that modified CBOW generally outperforms conventional CBOW reimplementation, consistent with the original conference paper. However, the modified CBOW model losses performance superiority with a larger number of vocabularies to total words ratio in the training corpus.  
 - Awarded A+ Grade for Deep Learning & Applications course in NTU MSAI Program  
 Video Link: (Youtube)[https://www.youtube.com/watch?v=ANLI7Hl1jH0] 
+<br>
   
 4. NTU, Singapore, Engineering Innovation Design, Jan 2016 – May 2016  
 Project Title: Design of Supermarket trolley with anti theft system  
@@ -49,7 +47,8 @@ tackle real-life problems creatively)
 - Study of existing designs, possible new designs, sketching, and CAD modeling of possible concepts that can be implemented.  
 - Fabricate the prototype with the assistance of external vendors, followed by conducting an evaluation study on the performance of the device through experiments  
 - Awarded A Grade for the completion of the project  
-
+<br>
+  
 5. Self-Initiated Project – Gaming Bot writer (Part time), Jan 2011 – Dec 2013  
 - While studying at Poly, wrote programming codes in Java for MMORPG Runescape game bots to carry out automated instructions repetitively to achieve desired outcomes in the computer game.  
 - Utilize gaming bots to intelligently play the game and farm in-game currency by hosting numerous automated bots on virtual private servers to play the Runescape game which was originally meant for real life humans.  
@@ -59,12 +58,14 @@ tasks efficiently.
 - Assist/Troubleshoot other users in the online community trying to write their own code (Learn via teaching)  
 - Profited approx. 10,000 SGD by farming and collating in-game currency and then re-sell them to real life users from 2011 to 2013.  
 - All botting accounts were completely blasted by Game Developers, following an automated anti-cheat system update in 2017 marking the end of the self-interest research project.  
+<br>
   
 6. Ngee Ann Polytechnic, Singapore – Basic C programming Project Apr 2010 – Dec 2010  
 - Trained in the fundamentals of C programming while attending the module “Fundamental of C programming”.  
 - Write a simple calculator software as part of the project minimum requirement.  
 - Advanced on writing a Blackjack card game software and was awarded A+ for the modular course.  
 - Scored A+ for the hand-written coding examination of the modular course.  
+<br>
   
 7. Self-Initiated Project – Maplestory Private Server Owner, June 2009 – Dec 2009  
 - Using source code provided by the online community in Java, start-up my own MMORPG game MapleStory private server together with another secondary school classmate.  
