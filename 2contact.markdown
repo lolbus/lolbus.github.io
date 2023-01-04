@@ -4,15 +4,5 @@ title: Contact
 permalink: /contact/
 ---
 
-This i222222s the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Feel free to email me to discuss about work opportunities: [teng0112@e.ntu.edu.sg](mailto:teng0112@e.ntu.edu.sg)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
