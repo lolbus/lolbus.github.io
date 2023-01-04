@@ -5,7 +5,7 @@ permalink: /experience/
 ---
 
 
-my FULL-TIME WORK EXPERIENCE info:  
+FULL-TIME WORK EXPERIENCE info:  
 Nanyang Technology University, Singapore: Software Engineering Research Assistant  
 Nov 2021 - Current  
   
