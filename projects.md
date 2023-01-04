@@ -15,7 +15,8 @@ from top-tiered venues and write a literature review report to report a neat and
 - - Re-thinking Knowledge Graph Completion Evaluation from an Information Retrieval Perspective  
 - Awarded A Grade for Text Data Management & Processing course in NTU MSAI Program  
 Download Link:  
-<br>  
+<br>
+  
 2. NTU, Singapore, Machine Learning & Applications Project, Jan 2022 – Apr 2022  
 Title: Kaggle’s Kinship Recognition Challenge: Introduction of Convolution-Free Model to boost conventional ensemble classifier  
 (School Final Assignment for Course: AI6102, Machine Learning & Applications. Conduct a research project related to machine learning)  
@@ -26,7 +27,8 @@ Title: Kaggle’s Kinship Recognition Challenge: Introduction of Convolution-Fre
 - Awarded A+ Grade for Machine Learning & Applications course in NTU MSAI Program  
 - Awarded Best Presenter Award (Senior) and SGD300 at STCAI Conference Sharing, 25 June 2022  
 Download Link:  
-<br>  
+<br>
+  
 3. NTU, Singapore, Deep Learning & Applications Project Aug 2021 – Nov 2021  
 Title: Reimplementation of “Joint Learning of Character and Word Embeddings”  
 (School Final Assignment for Course AI6103, Deep learning & Applications. Assignment Task: Take a conference paper (AAAI, IJCAI, ICML, NeurIPS, ICLR, CVPR, ICCV NAACL, ACL, etc ) from 2015. Reimplement the algorithm in that paper. No existing source code is allowed)  
