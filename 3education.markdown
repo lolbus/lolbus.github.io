@@ -3,7 +3,7 @@ layout: page
 title: Education
 permalink: /education/
 ---
-My EDUCATION info: <p>
+My EDUCATION info: <br><br>
 Nanyang Technological University, Singapore<br>                                                                                     	
 School of Computer Science and Engineering (SCSE)<br>                
 Master of Science in Artificial Intelligence (Part-Time), Aug 2021 – Jun 2023 (Expected)<BR>
