@@ -36,7 +36,7 @@ Title: Reimplementation of “Joint Learning of Character and Word Embeddings”
 - Validation and Test performance evaluated based on word relatedness test using Spearman correlation metrics and Analogy Reasoning using % accuracy.  
 - Discover that modified CBOW generally outperforms conventional CBOW reimplementation, consistent with the original conference paper. However, the modified CBOW model losses performance superiority with a larger number of vocabularies to total words ratio in the training corpus.  
 - Awarded A+ Grade for Deep Learning & Applications course in NTU MSAI Program  
-Video Link: (Youtube)[https://www.youtube.com/watch?v=ANLI7Hl1jH0] 
+Video Link: (YouTube)[https://www.youtube.com/watch?v=ANLI7Hl1jH0] 
 <br>
   
 4. NTU, Singapore, Engineering Innovation Design, Jan 2016 – May 2016  
