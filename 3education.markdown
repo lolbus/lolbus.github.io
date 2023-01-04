@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Education
-permalink: /education/
+permalink: /education/ 
 ---
-My EDUCATION info: <br><br>
+My EDUCATION info: <br><br>     
 Nanyang Technological University, Singapore<br>                                                                                     	
 School of Computer Science and Engineering (SCSE)<br>
 Master of Science in Artificial Intelligence (Part-Time), <BR>
