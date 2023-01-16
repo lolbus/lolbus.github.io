@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "DeepLearning.AI TensorFlow Developer Profession Certificate [PROGRESS UPDATE]"
+date:   2023-01-15 16:00:08 +0800
+categories: jekyll update
+---
+
+I’m happy to share that I’ve obtained a new certification: DeepLearning.AI TensorFlow Developer Specialization from Coursera!  
+Best takeaway from the course: Gaining a good collection of handy TensorFlow skeleton scripts for future projects.  
+[Certificate link](https://coursera.org/share/d6bde72042e50724c3c79f0755c27c58)
