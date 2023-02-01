@@ -14,7 +14,7 @@ Nov 2021 - Current
 -Develop Frontend applications for the demo of AI algorithm developed by NTU SCALE Lab (Singtel Cognitive and Artificial Intelligence Lab for Enterprises)  
 -Research and Development of IntelliK App, a gamified education app  
 -Research and Development of an Educational course management system.  
-More information related to the nature of the program can be found here: [Today Article Link] (https://www.todayonline.com/singapore/harnessing-ai-ntu-creates-apps-help-people-special-needs-learn-social-emotional-skills)
+More information related to the nature of the program can be found here: [Today Article Link](https://www.todayonline.com/singapore/harnessing-ai-ntu-creates-apps-help-people-special-needs-learn-social-emotional-skills)
   
 Nanyang Technology University, Singapore: R&D Engineer (Robotics)  
 Oct 2020 – Apr 2021  
