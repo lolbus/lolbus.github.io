@@ -5,7 +5,7 @@ permalink: /experience/
 ---
 
 
-FULL-TIME WORK EXPERIENCE info:  
+<ins>FULL-TIME WORK EXPERIENCE info:</ins>  
 Nanyang Technology University, Singapore: Software Engineering Research Assistant  
 Nov 2021 - Current  
 -Deployment of new game features using DeepLearning powered emotion recognition for education enhancement. (E.g training special needs children to develop emotion expression skills.)  
