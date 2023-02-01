@@ -19,7 +19,8 @@ More information related to the nature of the program can be found here: [Today 
 Nanyang Technology University, Singapore: R&D Engineer (Robotics)  
 Oct 2020 – Apr 2021  
 -Develops mobile robots with stairs climbing ability to perform a list of tasks at the construction site for Construction 4.0.  
--Perform data processing of sensors data into time series geospatial data to evaluate system’s ability of indoor localization  
+-Perform raw data processing of sensors data into time series geospatial data to evaluate system’s ability of indoor localization  
+-Setup implementation, troubleshoot unexpected errors to conduct live demo of Robot to research program stakeholders.  
   
 ExxonMobil, PAC Refinery Singapore, Fixed Equipment & Inspection Engineer/First Line Supervisor  
 Sep 2019 – Oct 2020  
