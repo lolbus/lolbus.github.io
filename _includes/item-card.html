@@ -121,7 +121,7 @@
         <li><a class="vidlink" href="{{ '/videos/' | relative_url }}#{{ v.id }}">
           <span class="vidlink__icon" aria-hidden="true">▶</span>
           <span class="vidlink__title">{{ v.title }}</span>
-          <span class="vidlink__meta">{{ v.date | date: site.date_format }}{% if v.duration %} · {{ v.duration }}{% endif %}</span>
+          <span class="vidlink__meta">{% if v.date_label %}{{ v.date_label }}{% else %}{{ v.date | date: site.date_format }}{% endif %}{% if v.duration %} · {{ v.duration }}{% endif %}</span>
         </a></li>
         {%- endfor %}
       </ul>

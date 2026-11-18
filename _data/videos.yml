@@ -2,7 +2,8 @@
 # Fields:
 #   id:          unique, lowercase-with-dashes; the page anchor is /videos/#<id>
 #   title:       as shown on the card
-#   date:        YYYY-MM-DD (shown as "Mon YYYY")
+#   date:        YYYY-MM-DD (shown as "Mon YYYY"; also sets the sort order)
+#   date_label:  optional text shown instead of the date, e.g. a role period "Oct 2020 – Mar 2021"
 #   youtube_id:  the part after watch?v=   (use this OR url)
 #   url:         full link for Google Drive or other hosts
 #   duration:    optional, e.g. "6:42"
@@ -24,12 +25,72 @@
 #   roles: [dxc]
 #   projects: [dxc-vlm]
 
+- id: kinship-convolution-free-talk
+  title: Introduction of Convolution-Free Model to boost conventional ensemble classifier (v2)
+  date: 2022-06-24
+  youtube_id: PCCNeyF2LxM
+  duration: "22:00"
+  org: Nanyang Technological University (MSc AI)
+  summary: Talk on the Kaggle Kinship Recognition challenge project, introducing a Convolution-Free model to boost a conventional ensemble classifier. The same work won Best Presenter (Senior) at STCAI 2022.
+  tags: [computer vision, Vision Transformer, ensemble learning, Kaggle, MSc AI]
+  roles: []
+  projects: [ai6102-kinship]
+
+- id: eye-tracker-unity-game
+  title: CNN eye tracker controlling a Unity game
+  date: 2023-02-01
+  date_label: Nov 2021 – Feb 2023
+  youtube_id: bSBjLAh9eN0
+  duration: "0:44"
+  org: Nanyang Technological University
+  summary: The webcam eye tracker used as the controller for a gamified education app built in Unity.
+  tags: [computer vision, eye tracking, deep learning, Unity]
+  roles: [ntu-research]
+  projects: []
+
+- id: eye-tracker-gaze-detection
+  title: CNN eye tracker, live gaze-point detection
+  date: 2023-01-31
+  date_label: Nov 2021 – Feb 2023
+  youtube_id: 8CDXekVol8o
+  duration: "0:55"
+  org: Nanyang Technological University
+  summary: Webcam-based CNN eye tracker labelling, in real time, where on the screen the user is looking.
+  tags: [computer vision, eye tracking, deep learning, OpenCV]
+  roles: [ntu-research]
+  projects: []
+
+- id: toppan-pax-counting-demo
+  title: In-vehicle passenger counting from radar point clouds
+  date: 2024-07-01
+  date_label: May 2023 – Jul 2024
+  youtube_id: Zy2Qg_xvQrU
+  duration: "0:10"
+  org: Toppan Next Tech
+  summary: In-vehicle passenger counting system analysing 60GHz radar point clouds, with the live point-cloud view running beside the car.
+  tags: [60GHz radar, point cloud, passenger counting]
+  roles: [toppan]
+  projects: [toppan-gate]
+
 - id: ai6103-oral-presentation
   title: AI6103 Oral presentation
-  date: 2021-11-01
-  youtube_id: ANLI7Hl1jH0
+  date: 2021-11-29
+  youtube_id: ysXJx648mO0
+  duration: "5:00"
   org: Nanyang Technological University (MSc AI)
   summary: Project presentation for AI6103 Deep Learning & Applications, reimplementing “Joint Learning of Character and Word Embeddings” in PyTorch.
   tags: [PyTorch, NLP, word embeddings, MSc AI]
   roles: []
   projects: [ai6103-embeddings]
+
+- id: mobileman-robot-demo
+  title: MobileMan stair-climbing robot, early version demo
+  date: 2021-03-01
+  date_label: Oct 2020 – Mar 2021
+  youtube_id: 3M21SpyJRyY
+  duration: "1:20"
+  org: Nanyang Technological University (School of Mechanical & Aerospace Engineering)
+  summary: Early version of the MobileMan tracked robot carrying a load at a stair rig, built for Construction 4.0 site tasks.
+  tags: [robotics, ROS, construction]
+  roles: [ntu-rnd]
+  projects: []

@@ -24,7 +24,7 @@ lede: Recordings of past work. Search by title, technology, employer or year.
     {%- for rid in v.roles -%}{%- assign r = site.data.experience | where: 'id', rid | first -%}{%- if r -%}<a href="{{ '/experience/' | relative_url }}#{{ r.id }}">{{ r.title }}</a>{%- endif -%}{%- endfor -%}
     {%- for pid in v.projects -%}{%- assign p = site.data.projects.items | where: 'id', pid | first -%}{%- if p -%}<a href="{{ '/projects/' | relative_url }}#{{ p.id }}">{{ p.title }}</a>{%- endif -%}{%- endfor -%}
   {%- endcapture -%}
-  {%- capture searchtext -%}{{ v.title }} {{ v.summary }} {{ v.org }} {{ v.date | date: '%Y %B %b' }} {{ v.tags | join: ' ' }}{%- endcapture -%}
+  {%- capture searchtext -%}{{ v.title }} {{ v.summary }} {{ v.org }} {{ v.date | date: '%Y %B %b' }} {{ v.date_label }} {{ v.tags | join: ' ' }}{%- endcapture -%}
   <article class="vcard" id="{{ v.id }}" data-search="{{ searchtext | downcase | strip_newlines | escape }}" data-tags="{{ v.tags | join: '|' | downcase | escape }}">
     {%- if v.youtube_id %}
     <button type="button" class="vthumb" data-yt="{{ v.youtube_id }}" aria-label="Play {{ v.title | escape }}">
@@ -36,7 +36,7 @@ lede: Recordings of past work. Search by title, technology, employer or year.
     {%- endif %}
     <div class="vcard__body">
       <h2 class="vcard__title">{% if v.youtube_id %}<a href="https://www.youtube.com/watch?v={{ v.youtube_id }}" target="_blank" rel="noopener">{{ v.title }}</a>{% else %}<a href="{{ v.url }}" target="_blank" rel="noopener">{{ v.title }}</a>{% endif %}</h2>
-      <p class="vcard__meta">{{ v.date | date: site.date_format }}{% if v.duration %} · {{ v.duration }}{% endif %} · {{ v.org }}</p>
+      <p class="vcard__meta">{% if v.date_label %}{{ v.date_label }}{% else %}{{ v.date | date: site.date_format }}{% endif %}{% if v.duration %} · {{ v.duration }}{% endif %} · {{ v.org }}</p>
       <p class="vcard__summary">{{ v.summary }}</p>
       {%- if links != '' %}<p class="vcard__links">From: {{ links }}</p>{% endif %}
       {%- if v.tags %}<ul class="chips chips--small">{% for t in v.tags %}<li class="chip">{{ t }}</li>{% endfor %}</ul>{% endif %}
