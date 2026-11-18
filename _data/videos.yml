@@ -31,7 +31,7 @@
   youtube_id: PCCNeyF2LxM
   duration: "22:00"
   org: Nanyang Technological University (MSc AI)
-  summary: Talk on the Kaggle Kinship Recognition challenge project, introducing a Convolution-Free model to boost a conventional ensemble classifier. The same work won Best Presenter (Senior) at STCAI 2022.
+  summary: Talk on the Kaggle Kinship Recognition challenge project, introducing a Convolution-Free model to boost a conventional ensemble classifier. The same work won Best Presenter (Senior) at the STCAI Artificial Intelligence Conference 2022.
   tags: [computer vision, Vision Transformer, ensemble learning, Kaggle, MSc AI]
   roles: []
   projects: [ai6102-kinship]
