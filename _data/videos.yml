@@ -1,0 +1,35 @@
+# Videos page index. Videos stay on YouTube (unlisted is fine) or Google Drive; only this list lives in the repo.
+# Fields:
+#   id:          unique, lowercase-with-dashes; the page anchor is /videos/#<id>
+#   title:       as shown on the card
+#   date:        YYYY-MM-DD (shown as "Mon YYYY")
+#   youtube_id:  the part after watch?v=   (use this OR url)
+#   url:         full link for Google Drive or other hosts
+#   duration:    optional, e.g. "6:42"
+#   org:         employer or institution
+#   summary:     one line on what the video shows
+#   tags:        list, used by the filter chips and search
+#   roles:       list of role ids from _data/experience.yml  (adds the video to that role's Videos tab)
+#   projects:    list of project ids from _data/projects.yml (adds the video to that project's Videos tab)
+#
+# Template for a new entry (copy, remove the leading "# ", fill in):
+# - id: dxc-vlm-zone-check-demo
+#   title: VLM zone-cleaning check, live demo
+#   date: 2026-10-01
+#   url: https://drive.google.com/file/d/<file-id>/view
+#   duration: "4:10"
+#   org: DXC Technology
+#   summary: Camera feed checked zone by zone; confirmed work routed to a reviewer.
+#   tags: [VLM, computer vision, on-premises]
+#   roles: [dxc]
+#   projects: [dxc-vlm]
+
+- id: ai6103-oral-presentation
+  title: AI6103 Oral presentation
+  date: 2021-11-01
+  youtube_id: ANLI7Hl1jH0
+  org: Nanyang Technological University (MSc AI)
+  summary: Project presentation for AI6103 Deep Learning & Applications, reimplementing “Joint Learning of Character and Word Embeddings” in PyTorch.
+  tags: [PyTorch, NLP, word embeddings, MSc AI]
+  roles: []
+  projects: [ai6103-embeddings]

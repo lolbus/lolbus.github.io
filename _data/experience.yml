@@ -1,0 +1,94 @@
+# Experience, newest first. Each role: id (also its visuals folder: assets/work/<id>/), title, org, location, dates, scope, highlights, stack.
+# Highlights: first 3 show by default; the rest sit behind "Show all". Videos attach via _data/videos.yml (roles: [<id>]).
+
+- id: dxc-fde
+  title: Forward Deployed AI Engineer (NTUC)
+  org: DXC Technology
+  location: Singapore
+  dates: Dec 2026 – Apr 2027
+  scope: On-site delivery of a production chatbot integrated into NTUC's systems.
+  highlights: []
+  stack: []
+
+- id: dxc
+  title: AI/ML Consultant and Solution Architect
+  org: DXC Technology, Singapore Innovation Lab
+  location: Singapore
+  dates: Nov 2024 – Present
+  scope: "I take enterprise AI from a client's idea to a governed, running deployment: scope it, prove it small with a Proof of Value, then build it on-premises or on the client's cloud, for regulated and security-sensitive sectors."
+  highlights:
+    - title: Camera AI, demo to funded live deployment (2026)
+      text: Sole engineer on an on-premises vision-language model (VLM) system that checks camera feeds to confirm cleaning contractors serviced each zone and routes confirmed work to a reviewer for sign-off. New checks are a changed written instruction, not a retrained model. Core system live, full rollout Nov 2026. Gives sales a live reference for prospects.
+    - title: Governed AI agents for a regulated-sector client (2026)
+      text: Built the client's knowledge assistant on AI Workbench, DXC's governed, Kubernetes-based enterprise AI agent platform. Containerised agents with guardrails, circuit breakers and a scalable knowledge base, connected to Microsoft 365. Staff ask one assistant instead of searching policies, SOPs, emails and records.
+    - title: ASEAN AI Workbench enablement (2026)
+      text: Asked by ASEAN Advisory Data & AI leadership, as the region's most experienced practitioner, to run its quarterly enablement workshop for 100+ consultants and engineers.
+    - title: Private coding model (2026)
+      text: Set up a coding model on DXC's own NVIDIA GPU server as the engine behind Claude Code, so code stays inside DXC. Live with 3 champion users; batch rollout planned.
+    - title: On-premises AI advisory, security-sensitive client (2025–26)
+      text: Sized an on-premises setup to budget for client leadership; designed the trainees' document Q&A agent.
+    - title: Innovation Lab technical reviewer (2024–26)
+      text: Assess sales and pre-sales AI proposals; prove risky ones with a small Proof of Value first.
+  stack: [LangGraph, MCP, A2A, Copilot Studio, Claude Cowork, Claude Code, Azure OpenAI, AWS Bedrock, vLLM, LiteLLM, DGX Spark]
+
+- id: toppan
+  title: AI/ML Engineer
+  org: Toppan Next Tech
+  location: Singapore
+  dates: May 2023 – Jul 2024
+  scope: Vehicle and biometric AI MVPs for immigration-checkpoint use cases; took the vehicle-screening system to live use at Toppan's own security gate entrance.
+  highlights:
+    - title: Passenger counting
+      text: Combined cameras with 60GHz radar, since cameras alone miss occupants hidden from view. Near-100% passenger-count accuracy on standard vehicles in live use at the gate.
+    - title: Vehicle attributes
+      text: OpenAI GPT-4 extracts each car's model as a structured field; deep-learning models classify car colour and driver demographics. On-premises fallback model where data cannot go to an external API.
+    - title: Data pipeline and deployment
+      text: Defined the pipeline from the security system's RF and camera sensors to cleaned, annotated training data; deployed the detection and counting models on edge servers.
+    - title: Integration
+      text: Worked with full-stack developers to integrate the models into the wider security system; deployed GPT-4o assistants with LangChain.
+    - title: Team
+      text: Supervised interns on data collection and annotation, in Agile Scrum.
+  stack: [OpenAI GPT-4 / GPT-4o, LangChain, 60GHz radar, computer vision, edge servers]
+
+- id: ntu-research
+  title: Software Engineering Researcher (AI)
+  org: Nanyang Technological University
+  location: Singapore
+  dates: Nov 2021 – Feb 2023
+  scope: Full-time role while studying for the MSc AI part-time. Gaze-controlled game interaction for special-needs education, with vision models running in Unity.
+  highlights:
+    - text: Deployment of new game features using DeepLearning powered emotion recognition for education enhancement. (E.g training special needs children to develop emotion expression skills.)
+    - text: Perform statistical data analysis of public dataset, “Eye Tracker for Everyone” to develop strategies to perform data capturing and/or processing and optimize architecture of Deep Learning model
+    - text: Built and Implemented a new Eye Tracking CNN model to detect the screen’s gaze point of the user using the app. Real-time inference engine was built with OpenCV and dlib Facial Landmark detectors libraries. Neural network models were developed in PyTorch and Tensorflow v1 ML Framework.
+    - text: Develop Frontend applications for the demo of AI algorithm developed by NTU SCALE Lab (Singtel Cognitive and Artificial Intelligence Lab for Enterprises)
+    - text: Research and Development of IntelliK App, a gamified education app
+    - text: Research and Development of an Educational course management system.
+    - text: "More information related to the nature of the program can be found here: [Today Article Link](https://www.todayonline.com/singapore/harnessing-ai-ntu-creates-apps-help-people-special-needs-learn-social-emotional-skills)"
+  stack: [PyTorch, TensorFlow v1, OpenCV, dlib, Unity]
+
+- id: ntu-rnd
+  title: R&D Engineer (Robotics)
+  org: Nanyang Technological University
+  location: Singapore
+  dates: Oct 2020 – Mar 2021
+  scope: Sensor data pipelines and on-site trials for a stair-climbing construction robot.
+  highlights:
+    - text: Develops mobile robots with stairs climbing ability to perform a list of tasks at the construction site for Construction 4.0.
+    - text: Perform raw data processing of sensors data into time series geospatial data to evaluate system’s ability of indoor localization
+    - text: Setup implementation, troubleshoot unexpected errors to conduct live demo of Robot to research program stakeholders.
+  stack: []
+
+- id: exxonmobil
+  title: Fixed Equipment & Inspection Engineer / First Line Supervisor
+  org: ExxonMobil, PAC Refinery Singapore
+  location: Singapore
+  dates: Sep 2019 – Oct 2020
+  scope: Managed predictive-maintenance and reliability strategies for critical refinery equipment; supervised inspection teams and ensured asset integrity through data-driven risk assessment.
+  highlights:
+    - text: Supervises, Coordinate, and Coach new-hired Inspectors to perform Fixed Equipment Inspection at PAC Refinery (Crude) to reduce the leak.
+    - text: Ensures workplace safety and inspectors’ well-being are accounted for during Inspection procedures.
+    - text: Predictive maintenance of PAC Crude Refinery fixed equipment by using equipment strategy software.
+    - text: Develops and updates piping and fixed equipment strategy data for use as leading indicators for reliability assessment.
+    - text: Provides repair/mitigation recommendations to respond to imminent failures inspection findings.
+    - text: Inspection Lead IC of Piping Over Water Project (POW Project), a Multi-million Singapore Dollars comprehensive inspection program that covers all piping of PAC refinery situated above sea water, from May 2020 to September 2020.
+  stack: []

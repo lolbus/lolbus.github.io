@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Joined Toppan Next Tech as AI/ML Engineer"
+date:   2023-05-01 09:00:00 +0800
+---
+Started as AI/ML Engineer at Toppan Next Tech (May 2023 – Jul 2024): vehicle and biometric AI for immigration-checkpoint use cases. Details under [Experience](/experience/).

@@ -1,62 +1,43 @@
 ---
 layout: default
 ---
-
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
- 
-
-  My Latest Updates:
-
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow">AI/ML Consultant and Solution Architect · DXC Technology</p>
+      <h1 class="hero__name">Teng Guang Way <span class="hero__alias">(Wayne)</span></h1>
+      <p class="hero__summary">Builds AI systems for enterprise and regulated-sector clients at DXC Technology's Innovation Lab, Singapore: on-premises vision-language models, governed AI agents and private LLM serving. Forward Deployed AI Engineer at NTUC, Dec 2026 – Apr 2027.</p>
+      <ul class="facts">
+        <li class="fact"><span class="fact__k">AI/ML</span><span class="fact__v">since 2021</span></li>
+        <li class="fact"><span class="fact__k">Engineering</span><span class="fact__v">since 2019</span></li>
+        <li class="fact"><span class="fact__k">MSc AI</span><span class="fact__v">NTU, 2023</span></li>
+        <li class="fact"><span class="fact__k">Coding projects</span><span class="fact__v">since 2009</span></li>
+      </ul>
+      <div class="btnrow">
+        <a class="btn btn--primary" href="{{ '/experience/' | relative_url }}">Experience</a>
+        <a class="btn" href="{{ '/videos/' | relative_url }}">Videos</a>
+        <a class="btn" href="{{ '/contact/' | relative_url }}">Contact</a>
       </div>
-    {%- endif %}
+    </div>
+    <img class="hero__photo" src="{{ '/assets/img/profile.png' | relative_url }}" alt="Teng Guang Way" width="128" height="112">
+  </div>
+</section>
 
-  {%- endif -%}
+<div class="wrap">
+  <section class="about" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="prose">{{ content }}</div>
+  </section>
 
+  <section class="updates" id="updates">
+    <h2 class="section-title">Latest updates</h2>
+    <ol class="updates__list">
+      {%- for post in site.posts %}
+      <li class="updates__item">
+        <time class="updates__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+        <a class="updates__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
 </div>

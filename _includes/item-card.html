@@ -1,0 +1,144 @@
+{%- comment -%}
+  One card for a role (kind="role") or a project (kind="project").
+  Tabs are built only for panels that have content. Visuals come from assets/work/<id>/.
+{%- endcomment -%}
+{%- assign it = include.item -%}
+{%- assign kind = include.kind -%}
+{%- assign iid = it.id -%}
+{%- assign hl = include.h | default: 3 -%}{%- assign hp = hl | plus: 1 -%}
+{%- assign dir = '/assets/work/' | append: iid | append: '/' -%}
+{%- assign dirfiles = site.static_files | where_exp: "f", "f.path contains dir" -%}
+{%- assign imgs = '' | split: '' -%}
+{%- for f in dirfiles -%}
+  {%- assign ext = f.extname | downcase -%}
+  {%- if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.gif' -%}
+    {%- assign imgs = imgs | push: f -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if kind == 'role' -%}
+  {%- assign vids = site.data.videos | where_exp: "v", "v.roles contains iid" -%}
+  {%- assign items = it.highlights -%}
+  {%- assign side = it.stack -%}
+  {%- assign first_label = 'Highlights' -%}
+{%- else -%}
+  {%- assign vids = site.data.videos | where_exp: "v", "v.projects contains iid" -%}
+  {%- assign items = it.bullets -%}
+  {%- assign side = it.files -%}
+  {%- assign first_label = 'Overview' -%}
+{%- endif -%}
+{%- assign vids = vids | sort: 'date' | reverse -%}
+{%- assign n_items = items | size -%}
+{%- assign n_imgs = imgs | size -%}
+{%- assign n_vids = vids | size -%}
+{%- assign n_side = side | size -%}
+{%- assign n_first = n_items -%}
+{%- if kind == 'project' and it.context -%}{%- assign n_first = n_first | plus: 1 -%}{%- endif -%}
+<article class="card card--{{ kind }}" id="{{ iid }}">
+  <header class="card__head">
+    <div class="card__head-main">
+      <h{{ hl }} class="card__title">{{ it.title }}</h{{ hl }}>
+      {%- if kind == 'role' %}
+      <p class="card__org">{{ it.org }}</p>
+      {%- elsif it.meta %}
+      <p class="card__org">{{ it.meta }}</p>
+      {%- endif %}
+    </div>
+    {%- if kind == 'role' %}
+    <p class="card__dates">{{ it.dates }}</p>
+    {%- endif %}
+  </header>
+  {%- if kind == 'role' and it.scope %}
+  <p class="card__scope">{{ it.scope }}</p>
+  {%- endif %}
+  {%- if kind == 'project' and it.role %}
+  {%- assign role = site.data.experience | where: 'id', it.role | first -%}
+  <p class="card__related">Role: <a href="{{ '/experience/' | relative_url }}#{{ role.id }}">{{ role.title }}, {{ role.org | split: ',' | first }}</a></p>
+  {%- endif %}
+
+  {%- assign n_panels = 0 -%}
+  {%- if n_first > 0 %}{% assign n_panels = n_panels | plus: 1 %}{% endif -%}
+  {%- if n_imgs > 0 %}{% assign n_panels = n_panels | plus: 1 %}{% endif -%}
+  {%- if n_vids > 0 %}{% assign n_panels = n_panels | plus: 1 %}{% endif -%}
+  {%- if n_side > 0 %}{% assign n_panels = n_panels | plus: 1 %}{% endif -%}
+  {%- if n_panels > 0 %}
+  <div class="tabs{% if n_panels == 1 %} tabs--single{% endif %}"{% if n_panels > 1 %} data-tabs{% endif %}>
+    {%- if n_panels > 1 %}
+    <div class="tabs__list" role="tablist" aria-label="{{ it.title | escape }}: details">
+      {%- if n_first > 0 %}<button type="button" class="tabs__tab" role="tab" id="{{ iid }}-t-main" aria-controls="{{ iid }}-p-main">{{ first_label }}</button>{% endif %}
+      {%- if n_imgs > 0 %}<button type="button" class="tabs__tab" role="tab" id="{{ iid }}-t-vis" aria-controls="{{ iid }}-p-vis">Visuals <span class="tabs__count">{{ n_imgs }}</span></button>{% endif %}
+      {%- if n_vids > 0 %}<button type="button" class="tabs__tab" role="tab" id="{{ iid }}-t-vid" aria-controls="{{ iid }}-p-vid">Videos <span class="tabs__count">{{ n_vids }}</span></button>{% endif %}
+      {%- if n_side > 0 %}<button type="button" class="tabs__tab" role="tab" id="{{ iid }}-t-side" aria-controls="{{ iid }}-p-side">{% if kind == 'role' %}Stack{% else %}Files{% endif %}</button>{% endif %}
+    </div>
+    {%- endif %}
+
+    {%- if n_first > 0 %}
+    <section class="tabs__panel" id="{{ iid }}-p-main"{% if n_panels > 1 %} role="tabpanel" aria-labelledby="{{ iid }}-t-main"{% endif %}>
+      <h{{ hp }} class="tabs__panel-title">{{ first_label }}</h{{ hp }}>
+      {%- if kind == 'project' and it.context %}
+      <p class="card__context">{{ it.context }}</p>
+      {%- endif %}
+      {%- if n_items > 0 %}
+      <ul class="hl{% if n_items > 3 %} is-collapsible is-collapsed{% endif %}" id="{{ iid }}-hl">
+        {%- for h in items %}
+        <li class="hl__item">{% if h.title %}<strong class="hl__title">{{ h.title }}:</strong> {% endif %}<span class="hl__text">{{ h.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+          {%- if h.sub %}
+          <ul class="hl__sub">{% for s in h.sub %}<li>{{ s | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}</ul>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+      {%- if n_items > 3 %}
+      <button type="button" class="linkbtn" data-collapse-toggle aria-controls="{{ iid }}-hl" aria-expanded="false" data-more="Show all {{ n_items }}" data-less="Show fewer">Show all {{ n_items }}</button>
+      {%- endif %}
+      {%- endif %}
+    </section>
+    {%- endif %}
+
+    {%- if n_imgs > 0 %}
+    <section class="tabs__panel" id="{{ iid }}-p-vis"{% if n_panels > 1 %} role="tabpanel" aria-labelledby="{{ iid }}-t-vis"{% endif %}>
+      <h{{ hp }} class="tabs__panel-title">Visuals</h{{ hp }}>
+      <div class="gallery">
+        {%- for f in imgs %}
+        {%- assign cap = nil -%}
+        {%- if it.captions -%}{%- assign cap = it.captions[f.name] -%}{%- endif -%}
+        {%- unless cap -%}{%- assign cap = f.basename | replace: '-', ' ' | replace: '_', ' ' | capitalize -%}{%- endunless -%}
+        <figure class="gallery__item">
+          <a class="gallery__link" href="{{ f.path | relative_url }}" data-lightbox data-caption="{{ cap | escape }}">
+            <img src="{{ f.path | relative_url }}" alt="{{ cap | escape }}" loading="lazy" decoding="async">
+          </a>
+          <figcaption>{{ cap }}</figcaption>
+        </figure>
+        {%- endfor %}
+      </div>
+    </section>
+    {%- endif %}
+
+    {%- if n_vids > 0 %}
+    <section class="tabs__panel" id="{{ iid }}-p-vid"{% if n_panels > 1 %} role="tabpanel" aria-labelledby="{{ iid }}-t-vid"{% endif %}>
+      <h{{ hp }} class="tabs__panel-title">Videos</h{{ hp }}>
+      <ul class="vidlinks">
+        {%- for v in vids %}
+        <li><a class="vidlink" href="{{ '/videos/' | relative_url }}#{{ v.id }}">
+          <span class="vidlink__icon" aria-hidden="true">▶</span>
+          <span class="vidlink__title">{{ v.title }}</span>
+          <span class="vidlink__meta">{{ v.date | date: site.date_format }}{% if v.duration %} · {{ v.duration }}{% endif %}</span>
+        </a></li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endif %}
+
+    {%- if n_side > 0 %}
+    <section class="tabs__panel" id="{{ iid }}-p-side"{% if n_panels > 1 %} role="tabpanel" aria-labelledby="{{ iid }}-t-side"{% endif %}>
+      {%- if kind == 'role' %}
+      <h{{ hp }} class="tabs__panel-title">Stack</h{{ hp }}>
+      <ul class="chips">{% for s in side %}<li class="chip">{{ s }}</li>{% endfor %}</ul>
+      {%- else %}
+      <h{{ hp }} class="tabs__panel-title">Files</h{{ hp }}>
+      <ul class="files">{% for fl in side %}<li><a class="filelink" href="{{ fl.url | relative_url }}">{{ fl.label }}<span class="filelink__type">{{ fl.url | split: '.' | last | upcase }}</span></a></li>{% endfor %}</ul>
+      {%- endif %}
+    </section>
+    {%- endif %}
+  </div>
+  {%- endif %}
+</article>

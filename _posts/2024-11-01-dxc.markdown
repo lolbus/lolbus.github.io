@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Joined DXC Technology Innovation Lab, Singapore"
+date:   2024-11-01 09:00:00 +0800
+---
+Started at DXC Technology's Innovation Lab in Singapore as Innovation Consultant (AI/ML solutions). Current title: AI/ML Consultant and Solution Architect. Details under [Experience](/experience/).
