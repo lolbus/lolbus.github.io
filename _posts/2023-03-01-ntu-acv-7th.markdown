@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "7th of 96, NTU Advanced Computer Vision competition"
+date:   2023-03-01 09:00:00 +0800
+---
+Placed 7th of 96 in the NTU Advanced Computer Vision Kaggle-like competition (Mar 2023).
