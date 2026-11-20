@@ -49,6 +49,7 @@
    Base
    ========================================================================== */
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; } /* keep the hidden attribute effective over component display rules (video filter) */
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 80px; }
 body {
   margin: 0;
