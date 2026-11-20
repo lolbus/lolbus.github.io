@@ -7,4 +7,7 @@
   <link rel="icon" href="{{ '/assets/img/profile.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' %}
+  <script data-goatcounter="https://lolbus.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  {%- endif %}
 </head>
